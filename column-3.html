@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Column 3 Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .left, .main, .right {
+      float: left;
+      height: 300px;
+      color: #FFF;
+    }
+
+    .left {
+      width: 200px;
+      margin-left: -100%;
+      background-color: red;
+    }
+
+    .main {
+      width: 100%;
+    }
+
+    .main div {
+      height: 300px;
+      margin-left: 200px;
+      margin-right: 300px;
+      background-color: green;
+    }
+
+    .right {
+      width: 300px;
+      margin-left: -300px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div>Main(100%)</div>
+  </div>
+  <div class="left">Left(200px)</div>
+  <div class="right">Right(300px)</div>
+</body>
+</html>
